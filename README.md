@@ -57,6 +57,14 @@ carry to the final's FAA markets, whose prices move the same jumpy way.
 Runtime: ~0.4 s for all six practice cases (limit is 8 s per case). Two
 runs write byte-identical outputs.
 
+Note: this kit's `grade-local` does not score program/v1 entries locally
+("its scorer and reference data are not published in the kit, so it is
+graded on the server only"), so the table above was produced with an
+independent scorer: the true 240-minute futures for the six practice cases
+were fetched from Polymarket's public price history
+(`clob.polymarket.com/prices-history`, 1-minute fidelity) and scored with
+the same pinball loss the brief defines.
+
 ## Files
 
 - `main.py` — the forecaster
